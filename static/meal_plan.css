@@ -1,0 +1,73 @@
+/* Style for header and navigation */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    top:0;
+    width: 100%;
+    position:absolute;
+    margin-bottom: 2rem;
+    background-color:#00425A;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    font-size: 25px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Style for main content */
+  main {
+    max-width: 800px;
+    margin: auto;
+    padding: 100px;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+ul{
+  padding-left: 50px;
+}
+
+ol{
+  padding-left: 50px;
+}
+
+p{
+  line-height: 1.5;
+}

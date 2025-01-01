@@ -1,0 +1,68 @@
+/* Style for header and navigation */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    top:0;
+    width: 100%;
+    position:absolute;
+    margin-bottom: 2rem;
+    background-color:#00425A;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    font-size: 25px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Style for main content */
+  main {
+    max-width: 800px;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  body{
+    margin-top: 150px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

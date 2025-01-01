@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Form</title>
+    <link rel="stylesheet" type="text/css" href="static/signup.css">
+</head>
+<body>
+    <h2>Signup Page</h2>
+    <div class="signup">
+        <form id="signup" method="POST" action="{{ url_for('signup') }}">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class="flashes">
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+             {% endif %}
+            {% endwith %}
+            <label><b>User Name
+            </b><br>
+            </label>
+            <br>
+            <input type="text" name="Uname" id="Uname" placeholder="Enter your Username">
+            <br><br>
+            <label><b>Password
+            </b><br>
+            </label>
+            <br>
+            <input type="password" name="Pass" id="Pass" placeholder="Enter your Password">
+            <br><br>
+            <label><b>E-mail
+            </b><br>
+            </label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+            <br><br><br>
+            <input type="submit" name="sign" id="sign" value="Signup">
+            <br><br>
+        </form>
+    </div>
+</body>
+</html>
