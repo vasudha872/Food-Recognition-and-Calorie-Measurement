@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="static/food.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="food">Food Recognition</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Food Recognition</h1>
+    <form id="food-recognition-form" action="{{ url_for('food_recognition') }}" method="POST" enctype="multipart/form-data">
+      <label style="font-size:larger; text-align: left;", for="food-image">Upload an image of your food:</label>
+      <br><br>
+      <input type="file" id="food-image" name="food-image" accept=".jpeg, .jpg, .png, .tiff" required>
+      <br><br>
+      <button style="font-size: larger;"type="submit">Recognize</button>
+    </form>
+    <h2>Result</h2>
+    <div class="result">
+      {% if response %}
+          <p><strong>Class Name: </strong>{{ response.class_name }}</p>
+          <p><strong>Calories: </strong>>{{ response.calories }}</p>
+          <p><strong>Confidence Score: </strong>>{{ response.confidence_score }}</p>
+      {% endif %}
+  </div>
+  </main>
+</body>
+</html>
